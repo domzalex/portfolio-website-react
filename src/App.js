@@ -22,6 +22,7 @@ function App() {
           <Route path="/Projects" component={Projects} />
         </Switch>
         <img className="homePlantImg" src="https://i.ibb.co/WVpr7wd/plant-2.png" alt=""></img>
+        <div className="footer-div"><a className="main-github-link" href="https://github.com/domzalex/portfolio-website-react" target="_blank">View on GitHub</a></div>
       </div>
     </Router>
     
