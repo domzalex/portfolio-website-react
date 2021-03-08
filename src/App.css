@@ -1,38 +1,259 @@
-.App {
+
+/* ################################### */
+/* ######### GENERAL STYLING ######### */
+/* ################################### */
+
+*, *::before, *::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Shippori+Mincho+B1:wght@400;500;600;700;800&display=swap');
+
+
+body {
+  height: 100vh;
+  font-family: 'Shippori Mincho B1', serif;
+}
+/* body::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  transform: scaleX(1);
+  background-color: white;
+} */
+
+.main-container {
+  width: 100%;
+  height: 100vh;
+  text-align: center;
+  position: relative;
+}
+.homePlantImg {
+  position: absolute;
+  transform: scale(0.7);
+  bottom: -100px;
+  right: -70px;
+  z-index: -1;
+}
+
+/* ############################### */
+/* ######### NAV STYLING ######### */
+/* ############################### */
+
+nav {
+  min-width: 800px;
+  width: 70vw;
+  max-width: 1200px;
+  height: 150px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav-link, .homeLink {
+  text-align: center;
+  text-decoration: none;
+  font-size: 1.5em;
+  padding: 0 5px;
+  color: black;
+  font-weight: 500;
+  position: relative;
+  list-style: none;
+}
+
+.nav-link::after {
+  content: '';
+  height: 2px;
+  width: 100%;
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  background-color: black;
+  transform: scaleX(0);
+  transition: transform 0.2s ease;
+}
+.homeLink::after {
+  content: '';
+  height: 2px;
+  width: 100%;
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  background-color: black;
+  transform: scaleX(1);
+}
+.homeLink::before {
+  content: '';
+  height: 2px;
+  width: 100%;
+  position: absolute;
+  bottom: -9px;
+  left: 0;
+  background-color: black;
+  transform: scaleX(0);
+  transition: transform 0.2s ease;
+}
+.homeLink:hover::before {
+  transform: scaleX(1);
+}
+.nav-link:hover::after {
+  transform: scaleX(1);
+}
+.homeLink {
+  text-decoration: none;
+  color: black;
+  font-weight: 800;
+  font-size: 1.8em;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+/* ############################### */
+/* ######### HOME STYLING ######## */
+/* ############################### */
+
+.homeContent {
+  position: absolute;
+  left: 50%;
+  top: 38%;
+  text-align: center;
+  transform: translateX(-50%);
+}
+h1 {
+  font-size: 3em;
+  font-weight: 800;
+}
+.mainHomeLink {
+  display: inline-block;
+  border: solid 1px black;
+  background-color: white;
+  border-radius: 5px;
+  font-size: 2em;
+  color: black;
+  text-decoration: none;
+  font-weight: 600;
+  padding: 0px 13px 9px 13px;
+  margin-top: 25px;
+  width: 100%;
+  transition: all 0.2s ease;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/*#5E7D5B*/
+
+.mainHomeLink:hover, .mainHomeLink:focus {
+  background-color: white;
+  border: solid 1px black;
+  border-left: solid 25px black;
+  border-right: solid 25px black;
+  color: black;
+  width: 100%;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+
+/* ############################### */
+/* ######## ABOUT STYLING ######## */
+/* ############################### */
+
+.aboutContent {
+  position: absolute;
+  left: 50%;
+  top: 28%;
+  text-align: center;
+  transform: translateX(-50%);
+}
+.about-text {
+  margin: 35px;
+  font-size: 22px;
+  font-weight: 400;
+  letter-spacing: 1.4px;
+  line-height: 2em;
+  text-align: left;
+  padding-left: 20px;
+  border-left: solid 2px black;
+}
+
+
+/* ############################### */
+/* ####### PROJECT STYLING ####### */
+/* ############################### */
+
+.project-content {
+  display: flex;
+  height: 72vh;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.projects-list {
+  display: grid;
+  grid-template-columns: 300px 300px 300px;
+  column-gap: 75px;
+  margin: auto;
+}
+.project {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  position: relative;
+  width: 300px;
+  height: 500px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0px 5px 5px rgba(0,0,0,0.15);
+  transition: all 0.2s ease;
 }
-
-.App-link {
-  color: #61dafb;
+.project-img {
+  width: 300px;
+  height: 150px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
 }
+.project:hover {
+  transform: scale(1.1);
+  box-shadow: 0px 5px 70px rgba(0,0,0,0.08);
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+}
+.project-name {
+  font-weight: 800;
+  font-size: 1.7em;
+  margin-bottom: 15px;
+  margin-top: 20px;
+}
+.project-text {
+  font-size: 20px;
+  padding: 0 10px;
+  margin-bottom: 20px;
+}
+.project-links {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  bottom: 25px;
+}
+.project a {
+  text-decoration: none;
+  position: relative;
+  font-size: 18px;
+  font-weight: 800;
+  color: black;
+  margin-top: 10px;
+}
+.project a::after {
+  content: '';
+  width: 100%;
+  height: 1px;
+  background-color: black;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transform: scaleX(0);
+  transition: transform 0.2s ease;
+}
+.project a:hover::after {
+  transform: scaleX(1);
 }
