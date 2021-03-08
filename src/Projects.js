@@ -9,10 +9,10 @@ function Projects() {
           <div className="project">
             <img className="project-img" src="https://i.ibb.co/k6438Yz/New-Project.jpg" alt=""></img>
             <h2 className="project-name">Grateful Dan Prod.</h2>
-            <p className="project-text">Entertainment company website GSAP animations, and Node/MongoDB for the events page.</p>
+            <p className="project-text">Entertainment company website using GSAP animations, and Node/MongoDB for the events page.</p>
             <div className="project-links">
             <a href="http://www.gratefuldanatl.com" target="_blank">Live Site</a>
-            <a href="https://github.com/domzalex/the-cul-de-sac-club" target="_blank">GitHub</a>
+            <a href="#" target="_blank">GitHub</a>
             </div> 
           </div>
           <div className="project">
@@ -27,10 +27,11 @@ function Projects() {
           <div className="project">
             <img className="project-img" src="https://i.ibb.co/PtFFHpS/skeleton.png" alt=""></img>
             <h2 className="project-name">Skeleton Gauntlet</h2>
-            <p className="project-text">My first JavaScript project. A short, turn-based RPG-style game. Completely vanilla JS.</p>
+            <p className="project-text">My first JavaScript project. A short, turn-based RPG-style game. Completely vanilla JS. All graphics created by me.
+          </p>
             <div className="project-links">
             <a href="http://www.alexdomzalski.com/skeletonGauntlet/index.html" target="_blank">Live Site</a>
-            <a href="https://github.com/domzalex/the-cul-de-sac-club" target="_blank">GitHub</a>
+            <a href="#" target="_blank">GitHub</a>
             </div>
           </div>
         </div>
