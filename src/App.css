@@ -16,6 +16,18 @@ body {
   height: 100vh;
   font-family: 'Shippori Mincho B1', serif;
 }
+body::before {
+  content: '';
+  background: url("http://alexdomzalski.com/img/bg.jpg");
+  background-size: cover;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  opacity: 0.7;
+  z-index: -1;
+}
 .main-container {
   width: 100%;
   height: 100vh;
@@ -27,6 +39,7 @@ body {
   transform: scale(0.7);
   bottom: -100px;
   right: -70px;
+  opacity: 1;
   z-index: -1;
 }
 
@@ -35,11 +48,16 @@ body {
 /* ######### NAV STYLING ######### */
 /* ############################### */
 
+.mobile-nav {
+  display: none;
+}
+
 nav {
   min-width: 800px;
   width: 70vw;
   max-width: 1200px;
   height: 150px;
+  background-color: rgba(255,255,255,0);
   margin: auto;
   display: flex;
   justify-content: space-between;
@@ -173,6 +191,8 @@ h1 {
 /* ############################### */
 
 .aboutContent {
+  width: 100vw;
+  max-width: 900px;
   position: absolute;
   left: 50%;
   top: 28%;
@@ -180,13 +200,15 @@ h1 {
   transform: translateX(-50%);
 }
 .about-text {
+  background-color: rgba(255,255,255,0.7);
+  backdrop-filter: blur(10px);
   margin: 35px;
   font-size: 22px;
   font-weight: 400;
   letter-spacing: 1.4px;
   line-height: 2em;
   text-align: left;
-  padding-left: 20px;
+  padding: 20px;
   border-left: solid 2px black;
 }
 
@@ -215,9 +237,11 @@ h1 {
   position: relative;
   width: 300px;
   height: 500px;
-  background-color: #fff;
+  background-color: rgba(255,255,255,0.7);
+  backdrop-filter: blur(10px);
   border-radius: 5px;
   box-shadow: 0px 5px 5px rgba(0,0,0,0.15);
+  backface-visibility: hidden;
   transition: all 0.2s ease;
 }
 .project-img {
@@ -228,6 +252,7 @@ h1 {
 }
 .project:hover {
   transform: scale(1.1);
+  backdrop-filter: blur(15px);
   box-shadow: 0px 5px 70px rgba(0,0,0,0.08);
 
 }
@@ -236,6 +261,7 @@ h1 {
   font-size: 1.7em;
   margin-bottom: 15px;
   margin-top: 20px;
+  border-bottom: solid 1px black;
 }
 .project-text {
   font-size: 20px;
@@ -269,4 +295,356 @@ h1 {
 }
 .project a:hover::after {
   transform: scaleX(1);
+}
+
+
+
+
+
+
+/* ################################### */
+/* ######### SMALLER STYLING ######### */
+/* ################################### */
+
+
+@media only screen and (max-width: 1100px) {
+
+/* ################################### */
+/* ######### GENERAL STYLING ######### */
+/* ################################### */
+
+*, *::before, *::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Shippori+Mincho+B1:wght@400;500;600;700;800&display=swap');
+
+
+body {
+  height: 87vh;
+  font-family: 'Shippori Mincho B1', serif;
+}
+body::before {
+  content: '';
+  background: url("http://alexdomzalski.com/img/bg.jpg");
+  background-size: 200vh;
+  position: fixed;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  opacity: 1;
+  z-index: -1;
+}
+.main-container {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  width: 100%;
+  height: 87vh;
+  text-align: center;
+  position: relative;
+}
+.main-container::-webkit-scrollbar { 
+  display: none;
+}
+.homePlantImg {
+  position: fixed;
+  width: calc(535px * 0.6);
+  height: calc(710px * 0.6);
+  transform: translateX(-50%);
+  bottom: 25px;
+  left: 50%;
+  opacity: 0;
+  z-index: -1;
+}
+
+
+/* ############################### */
+/* ######### NAV STYLING ######### */
+/* ############################### */
+
+.mobile-nav {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: -5px;
+  background-color: rgba(255,255,255,0.7);
+  backdrop-filter: blur(3px);
+  min-width: 0px;
+  z-index: 10;
+  width: 100vw;
+  height: 90px;
+  border-bottom: solid 1px black;
+}
+.mobile-links {
+  margin-top: 10px;
+  padding: 0px 15px 0px 15px;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+nav {
+  min-width: 800px;
+  width: 70vw;
+  max-width: 1200px;
+  height: 150px;
+  margin: auto;
+  display: none;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 0 10px rgba(0,0,0,0.15);
+}
+.nav-link, .homeLink {
+  text-align: center;
+  text-decoration: none;
+  font-size: 1.2em;
+  padding: 0 5px;
+  color: black;
+  font-weight: 500;
+  position: relative;
+  list-style: none;
+}
+
+.nav-link::after {
+  content: '';
+  height: 2px;
+  width: 100%;
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  background-color: black;
+  transform: scaleX(0);
+  transition: transform 0.2s ease;
+}
+.homeLink::after {
+  content: '';
+  height: 1px;
+  width: 100%;
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  background-color: black;
+  transform: scaleX(1);
+}
+.homeLink::before {
+  content: '';
+  height: 1px;
+  width: 100%;
+  position: absolute;
+  bottom: -9px;
+  left: 0;
+  background-color: black;
+  transform: scaleX(0);
+  transition: transform 0.2s ease;
+}
+.homeLink:hover::before {
+  transform: scaleX(0);
+}
+.nav-link:hover::after {
+  transform: scaleX(0);
+}
+.homeLink {
+  text-decoration: none;
+  color: black;
+  font-weight: 800;
+  font-size: 1.4em;
+  text-align: center;
+}
+
+
+/* ############################### */
+/* ######### HOME STYLING ######## */
+/* ############################### */
+
+.homeContent {
+  width: 70%;
+  position: absolute;
+  left: 50%;
+  top: 35%;
+  text-align: center;
+  transform: translateX(-50%);
+}
+h1 {
+  width: 100%;
+  font-size: 2em;
+  font-weight: 800;
+}
+.mainHomeLink {
+  display: inline-block;
+  border: solid 1px black;
+  background-color: white;
+  border-radius: 5px;
+  font-size: 2em;
+  color: black;
+  text-decoration: none;
+  font-weight: 600;
+  padding: 0px 13px 9px 13px;
+  margin-top: 25px;
+  width: 100%;
+  transition: all 0.2s ease;
+}
+.main-github-link {
+  text-decoration: none;
+  font-size: 16px;
+  color: black;
+  position: fixed;
+  background-color: rgba(255,255,255,0.7);
+  backdrop-filter: blur(5px);
+  width: 100%;
+  height: 30px;
+  border-top: solid 1px black;
+  bottom: 0px;
+  left: 50%;
+  box-shadow: -10px 0 10px rgba(0,0,0,0.15);
+  transform: translateX(-50%);
+}
+.main-github-link::after {
+  content: '';
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: black;
+  transform: scaleX(0);
+  transition: all 0.2s ease;
+}
+.main-github-link:hover::after {
+  transform: scaleX(0);
+}
+
+/*#5E7D5B*/
+
+.mainHomeLink:hover, .mainHomeLink:focus {
+  background-color: white;
+  border: solid 1px black;
+  border-left: solid 25px black;
+  border-right: solid 25px black;
+  color: black;
+  width: 100%;
+}
+
+
+/* ############################### */
+/* ######## ABOUT STYLING ######## */
+/* ############################### */
+
+.aboutContent {
+  position: absolute;
+  left: 50%;
+  top: -110px;
+  padding-bottom: 35px;
+  padding-top: 215px;
+  text-align: center;
+  transform: translateX(-50%);
+}
+.about-text {
+  margin: 25px;
+  font-size: 1em;
+  font-weight: 400;
+  letter-spacing: 1.4px;
+  line-height: 2em;
+  text-align: left;
+  padding: 0px;
+  border-left: none;
+  background: none;
+  backdrop-filter: blur(0px);
+}
+
+
+/* ############################### */
+/* ####### PROJECT STYLING ####### */
+/* ############################### */
+
+.project-content {
+  height: auto;
+  position: absolute;
+  top: 125px;
+  left: 50%;
+  padding-bottom: 25px;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.projects-list {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+}
+.project {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  width: 300px;
+  height: 420px;
+  background-color: rgba(255,255,255,0.5);
+  backdrop-filter: blur(5px);
+  border-radius: 5px;
+  margin-bottom: 50px;
+  box-shadow: 0px 5px 5px rgba(0,0,0,0.15);
+  backface-visibility: hidden;
+  transition: all 0.2s ease;
+}
+.project-img {
+  width: 300px;
+  height: 150px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+.project:hover {
+  transform: none;
+  backdrop-filter: blur(5px);
+  box-shadow: 0px 5px 5px rgba(0,0,0,0.15);
+}
+.project-name {
+  font-weight: 800;
+  font-size: 1.4em;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+.project-text {
+  font-size: 20px;
+  padding: 0 5px;
+  margin-bottom: 20px;
+  margin-top: 7px;
+}
+.project-links {
+  display: flex;
+  border-top: solid 1px black;
+  width: 100%;
+  flex-direction: row;
+  justify-content: space-evenly;
+  position: absolute;
+  bottom: 5px;
+}
+.project a {
+  text-decoration: none;
+  position: relative;
+  font-size: 1.2em;
+  font-weight: 600;
+  color: black;
+  margin-top: 0px;
+}
+.project a::after {
+  content: '';
+  width: 100%;
+  height: 1px;
+  background-color: black;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transform: scaleX(0);
+  transition: transform 0.2s ease;
+}
+.project a:hover::after {
+  transform: scaleX(0);
+}
 }

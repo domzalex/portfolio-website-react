@@ -7,7 +7,7 @@ function Projects() {
       <div className="project-content">
         <div className="projects-list">
           <div className="project">
-            <img className="project-img" src="https://i.ibb.co/k6438Yz/New-Project.jpg" alt=""></img>
+            <img className="project-img" src="https://i.ibb.co/Gkmk0mg/bfg-icon.jpg" alt=""></img>
             <h2 className="project-name">Grateful Dan Prod.</h2>
             <p className="project-text">Entertainment company website using GSAP animations, and Node/MongoDB for the events page.</p>
             <div className="project-links">
