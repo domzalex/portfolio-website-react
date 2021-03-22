@@ -226,8 +226,8 @@ h1 {
 }
 .projects-list {
   display: grid;
-  grid-template-columns: 300px 300px 300px;
-  column-gap: 75px;
+  grid-template-columns: 300px 300px 300px 300px;
+  column-gap: 45px;
   margin: auto;
 }
 .project {
@@ -249,11 +249,12 @@ h1 {
   height: 150px;
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
+  border-bottom: solid 1px black;
 }
 .project:hover {
-  transform: scale(1.1);
+  transform: scale(1.05);
   backdrop-filter: blur(15px);
-  box-shadow: 0px 5px 70px rgba(0,0,0,0.08);
+  box-shadow: 0px 5px 25px rgba(0,0,0,0.08);
 
 }
 .project-name {
@@ -277,6 +278,7 @@ h1 {
 .project a {
   text-decoration: none;
   position: relative;
+  width: auto;
   font-size: 18px;
   font-weight: 800;
   color: black;

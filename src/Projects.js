@@ -7,12 +7,20 @@ function Projects() {
       <div className="project-content">
         <div className="projects-list">
           <div className="project">
-            <img className="project-img" src="https://i.ibb.co/Gkmk0mg/bfg-icon.jpg" alt=""></img>
-            <h2 className="project-name">Grateful Dan Prod.</h2>
-            <p className="project-text">Entertainment company website using GSAP animations, and Node/MongoDB for the events page.</p>
+            <img className="project-img" src="https://i.ibb.co/SKSsCtF/bfg-banner-1.jpg" alt=""></img>
+            <h2 className="project-name">B.F.G. Productions</h2>
+            <p className="project-text">Entertainment company website made with the MERN stack. MongoDB courtesy of their Atlas cloud service.</p>
             <div className="project-links">
-            <a href="http://www.gratefuldanatl.com" target="_blank">Live Site</a>
-            <a href="#" target="_blank">GitHub</a>
+            <a href="http://www.bfgbandatl.com" target="_blank">Live Site</a>
+            <a href="https://github.com/domzalex/gda-website-react" target="_blank">GitHub</a>
+            </div> 
+          </div>
+          <div className="project">
+            <img className="project-img" src="https://i.ibb.co/jv3Hmjs/Screen-Shot-2021-03-22-at-12-27-40-PM.png" alt=""></img>
+            <h2 className="project-name">Events Manager</h2>
+            <p className="project-text">An events manager/CMS created for B.F.G. Productions to add new events to their website without needing a developer.</p>
+            <div className="project-links">
+            <a href="https://github.com/domzalex/gda-events-manager" target="_blank">GitHub</a>
             </div> 
           </div>
           <div className="project">
