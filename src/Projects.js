@@ -39,7 +39,7 @@ function Projects() {
           </p>
             <div className="project-links">
             <a href="http://www.alexdomzalski.com/skeletonGauntlet/index.html" target="_blank">Live Site</a>
-            <a href="#" target="_blank">GitHub</a>
+            <a href="https://github.com/domzalex/skeleton-gauntlet" target="_blank">GitHub</a>
             </div>
           </div>
         </div>
