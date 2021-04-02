@@ -38,7 +38,7 @@ function Projects() {
             <p className="project-text">My first JavaScript project. A short, turn-based RPG-style game. Completely vanilla JS. All graphics created by me.
           </p>
             <div className="project-links">
-            <a href="http://www.alexdomzalski.com/skeletonGauntlet/index.html" target="_blank">Live Site</a>
+            <a href="https://domzalex.github.io/skeleton-gauntlet/" target="_blank">Live Site</a>
             <a href="https://github.com/domzalex/skeleton-gauntlet" target="_blank">GitHub</a>
             </div>
           </div>
