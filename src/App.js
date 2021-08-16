@@ -21,8 +21,7 @@ function App() {
           <Route path="/About" component={About} />
           <Route path="/Projects" component={Projects} />
         </Switch>
-        <img className="homePlantImg" src="https://i.ibb.co/WVpr7wd/plant-2.png" alt=""></img>
-        <div className="footer-div"><a className="main-github-link" href="https://github.com/domzalex/portfolio-website-react" target="_blank">View on GitHub</a></div>
+        <div className="footer-div"><a className="main-github-link" href="https://github.com/domzalex/portfolio-website-react" target="_blank" rel="noreferrer">View on GitHub</a></div>
       </div>
     </Router>
     
@@ -36,7 +35,6 @@ const Home = () => {
           <h1>Full-stack Web Developer.</h1>
           <Link className="mainHomeLink" to="/Projects">- My Work -</Link>
         </div>
-          <img className="homePlantImg" src="https://i.ibb.co/WVpr7wd/plant-2.png" alt=""></img>
     </div>
   );
 }
