@@ -7,32 +7,44 @@ function Projects() {
       <div className="project-content">
         <div className="projects-list">
           <div className="project">
-            <img className="project-img" src="https://i.ibb.co/SKSsCtF/bfg-banner-1.jpg" alt=""></img>
-            <h2 className="project-name">B.F.G. Productions</h2>
-            <p className="project-text">Entertainment company website made with the MERN stack. MongoDB courtesy of their Atlas cloud service.</p>
+            <a href="http://www.bfgbandatl.com" rel="noreferrer" target="_blank"><h2 className="project-name">B.F.G. Productions</h2></a>
+            <p className="project-text">Landing page/event calendar for an Atlanta-based entertainment company.<br></br><br></br>Front end built with <b>React.js</b>.<br></br><br></br>Back end built with <b>Node.js</b> and <b>MongoDB</b>.</p>
             <div className="project-links">
-            <a href="http://www.bfgbandatl.com" rel="noreferrer" target="_blank">Live Site</a>
-            <a href="https://github.com/domzalex/gda-website-react" rel="noreferrer" target="_blank">GitHub</a>
+            <a href="https://github.com/domzalex/gda-website-react" rel="noreferrer" target="_blank">view on GitHub</a>
             </div> 
           </div>
           <div className="project">
-            <img className="project-img" src="https://i.ibb.co/jv3Hmjs/Screen-Shot-2021-03-22-at-12-27-40-PM.png" alt=""></img>
-            <h2 className="project-name">Events Manager</h2>
-            <p className="project-text">An events manager/CMS created for B.F.G. Productions to add new events to their website without needing a developer.</p>
+            <a href="https://www.theculdesac.club" rel="noreferrer" target="_blank"><h2 className="project-name">The Cul-De-Sac</h2></a>
+            <p className="project-text">A public blog with a retro computer style. Features a user login and a realtime chatroom built using <b>Socket.io</b>.<br></br><br></br>Front end built with <b>Express.js</b>.<br></br><br></br>Back end built with <b>Node.js</b>, <b>MongoDB</b>, and <b>Passport.js</b>.</p>
             <div className="project-links">
-            <a href="https://github.com/domzalex/gda-events-manager" rel="noreferrer" target="_blank">GitHub</a>
-            </div> 
-          </div>
-          <div className="project">
-            <img className="project-img" src="https://i.ibb.co/Qp7DmH3/cdsimg.png" alt=""></img>
-            <h2 className="project-name">The Cul-De-Sac</h2>
-            <p className="project-text">A public blog in a retro-computer style. Back-end made with Node/MongoDB. Authentication made with Passport.</p>
-            <div className="project-links">
-            <a href="http://www.theculdesac.club" rel="noreferrer" target="_blank">Live Site</a>
-            <a href="https://github.com/domzalex/the-cul-de-sac-club" rel="noreferrer" target="_blank">GitHub</a>
+            <a href="https://github.com/domzalex/the-cul-de-sac-club" rel="noreferrer" target="_blank">view on GitHub</a>
             </div>
           </div>
           <div className="project">
+            <a href="https://github.com/domzalex/rate-my-venue-atl" rel="noreferrer" target="_blank"><h2 className="project-name">RateMyVenue</h2></a>
+            <h3>**UNDER CONSTRUCTION**</h3>
+            <p className="project-text">A catered music venue review platform.<br></br><br></br>Front end being built with <b>React.js</b>.<br></br><br></br>Back end being built with <b>Node.js</b>, <b>MongoDB</b>, and <b>Passport.js</b>.</p>
+            <div className="project-links">
+            <a href="https://github.com/domzalex/rate-my-venue-atl" rel="noreferrer" target="_blank">view on GitHub</a>
+            </div>
+          </div>
+          <div className="project">
+            <a href="https://github.com/domzalex/viridian-creators-club" rel="noreferrer" target="_blank"><h2 className="project-name">Viridian Creators Club</h2></a>
+            <h3>**UNDER CONSTRUCTION**</h3>
+            <p className="project-text">A collaborative creative writing and education community.<br></br><br></br>Front end <i>currently</i> being built with <b>Express.js</b>.<br></br><br></br>Back end being built with <b>Node.js</b>, <b>MongoDB</b>, and <b>Passport.js</b>.</p>
+            <div className="project-links">
+            <a href="https://github.com/domzalex/viridian-creators-club" rel="noreferrer" target="_blank">view on GitHub</a>
+            </div>
+          </div>
+          <div className="project">
+            <a href="https://legendofdragoon.org" rel="noreferrer" target="_blank"><h2 className="project-name">Legend of Dragoon Fansite</h2></a>
+            <h3>**UNDER CONSTRUCTION**</h3>
+            <p className="project-text">The global fansite for the video game <i>The Legend of Dragoon</i>.<br></br><br></br>Site is currently built using a CMS, but is being re-worked with a modern development stack.<br></br><br></br>**Site is currently in the re-work planning phase.**</p>
+            <div className="project-links">
+            {/* <a href="https://github.com/domzalex/viridian-creators-club" rel="noreferrer" target="_blank">GitHub</a> */}
+            </div>
+          </div>
+          {/* <div className="project">
             <img className="project-img" src="https://i.ibb.co/PtFFHpS/skeleton.png" alt=""></img>
             <h2 className="project-name">Skeleton Gauntlet</h2>
             <p className="project-text">My first JavaScript project. A short, turn-based RPG-style game. Completely vanilla JS. All graphics created by me.
@@ -41,7 +53,7 @@ function Projects() {
             <a href="https://domzalex.github.io/skeleton-gauntlet/" rel="noreferrer" target="_blank">Live Site</a>
             <a href="https://github.com/domzalex/skeleton-gauntlet" rel="noreferrer" target="_blank">GitHub</a>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
     </div>

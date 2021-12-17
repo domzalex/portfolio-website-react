@@ -21,7 +21,7 @@ function App() {
           <Route path="/About" component={About} />
           <Route path="/Projects" component={Projects} />
         </Switch>
-        <div className="footer-div"><a className="main-github-link" href="https://github.com/domzalex/portfolio-website-react" target="_blank" rel="noreferrer">View on GitHub</a></div>
+        <div className="footer-div"><a className="main-github-link" href="mailto:hello@alexdomzalski.com" target="_blank">say hello!</a></div>
       </div>
     </Router>
     
@@ -32,8 +32,8 @@ const Home = () => {
   return (
     <div>
       <div className="homeContent">
-          <h1>Full-stack Web Developer.</h1>
-          <Link className="mainHomeLink" to="/Projects">- My Work -</Link>
+          <h1>Full-stack Web Developer</h1>
+          <Link className="mainHomeLink" to="/Projects">- Projects -</Link>
         </div>
     </div>
   );
