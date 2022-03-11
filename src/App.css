@@ -12,14 +12,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Shippori+Mincho+B1:wght@400;500;600;700;800&display=swap');
 
 body {
-  height: 100vh;
+  height: auto;
   font-family: 'Shippori Mincho B1', serif;
+  overflow-y: scroll;
 }
 body::before {
   content: '';
   background: url("bg.jpg");
   background-size: cover;
-  position: absolute;
+  position: fixed;
   top: 0px;
   right: 0px;
   bottom: 0px;
@@ -29,10 +30,13 @@ body::before {
 }
 .main-container {
   width: 100%;
-  height: 100vh;
+  min-height: 100vh;
   text-align: center;
   position: relative;
 }
+/* .footer-div {
+  position:relative;
+} */
 
 
 /* ############################### */
@@ -195,17 +199,16 @@ h1 {
 
 .project-content {
   display: flex;
-  padding: 30px;
-  height: 80vh;
+  padding: 60px 30px 100px 30px;
+  height: auto;
   flex-direction: column;
   justify-content: start;
   align-items: center;
-  overflow: scroll;
 }
 .projects-list {
   display: grid;
-  grid-template-columns: auto auto auto;
-  grid-gap: 1rem;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 1.5rem;
   margin: auto;
 }
 .project {
@@ -214,18 +217,17 @@ h1 {
   align-items: center;
   position: relative;
   width: auto;
-  height: 450px;
+  height: 500px;
   background-color: rgba(255,255,255,0.7);
   backdrop-filter: blur(10px);
   border-radius: 5px;
   box-shadow: 0px 5px 5px rgba(0,0,0,0.10);
   backface-visibility: hidden;
-  transition: all 0.2s ease;
+  transition: all 0.3s ease;
 }
 .project:hover {
-  transform: scale(1.05);
-  backdrop-filter: blur(15px);
-  box-shadow: 0px 5px 25px rgba(0,0,0,0.05);
+  transform: scale(1.03);
+  box-shadow: 0px 5px 10px rgba(0,0,0,0.1);
 
 }
 .project-name {
