@@ -14,7 +14,6 @@
 body {
   height: auto;
   font-family: 'Shippori Mincho B1', serif;
-  overflow-y: scroll;
 }
 body::before {
   content: '';
@@ -290,6 +289,7 @@ body {
   height: 87vh;
   font-family: 'Shippori Mincho B1', serif;
   background-color: rgb(241, 241, 241);
+  overflow: hidden;
 }
 body::before {
   content: '';
@@ -310,6 +310,7 @@ body::before {
   height: 87vh;
   text-align: center;
   position: relative;
+  overflow-y: scroll;
 }
 .main-container::-webkit-scrollbar { 
   display: none;
@@ -469,7 +470,7 @@ h1 {
   position: absolute;
   left: 50%;
   top: -110px;
-  padding-bottom: 35px;
+  padding-bottom: 100px;
   padding-top: 185px;
   text-align: center;
   transform: translateX(-50%);
@@ -480,7 +481,7 @@ h1 {
 }
 
 .about-text {
-  margin: 25px;
+  margin: 5vw;
   font-size: 1.1em;
   font-weight: 400;
   letter-spacing: 1.4px;
@@ -502,7 +503,7 @@ h1 {
   position: absolute;
   top: 125px;
   left: 50%;
-  padding: 0 0 25px 0;
+  padding: 0 0 100px 0;
   transform: translateX(-50%);
   display: flex;
   flex-direction: column;
@@ -522,10 +523,11 @@ h1 {
   width: 95vw;
   height: auto;
   background-color: rgba(255,255,255,0.5);
+  border: solid 1px black;
   backdrop-filter: blur(5px);
   border-radius: 5px;
-  margin-bottom: 50px;
-  box-shadow: 0px 5px 5px rgba(0,0,0,0.15);
+  margin-bottom: 20px;
+  box-shadow: 0px 5px 5px rgba(0,0,0,0.05);
   backface-visibility: hidden;
   transition: all 0.2s ease;
 }
@@ -538,7 +540,7 @@ h1 {
 .project:hover {
   transform: none;
   backdrop-filter: blur(5px);
-  box-shadow: 0px 5px 5px rgba(0,0,0,0.15);
+  box-shadow: 0px 5px 5px rgba(0,0,0,0.05);
 }
 .project-name {
   font-weight: 800;
@@ -548,7 +550,7 @@ h1 {
 }
 .project-text {
   font-size: 16px;
-  padding: 0 5px;
+  padding: 0px 15px;
   margin-bottom: 80px;
   margin-top: 30px;
 }

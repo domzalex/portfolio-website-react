@@ -36,7 +36,7 @@ function Projects() {
           <div className="project">
             <a href="https://github.com/domzalex/rate-my-venue-atl" rel="noreferrer" target="_blank"><h2 className="project-name">RateMyVenue</h2></a>
             <h3>**UNDER CONSTRUCTION**</h3>
-            <p className="project-text">A catered music venue review platform.<br></br><br></br>Front end being built with <b>React.js</b>.<br></br><br></br>Back end being built with <b>Node.js</b>, <b>MongoDB</b>, and <b>Passport.js</b>.<br></br><br></br><b>**Not desktop-friendly**</b></p>
+            <p className="project-text">A catered music venue review platform.<br></br><br></br>Front end being built with <b>React.js</b>.<br></br><br></br>Back end being built with <b>Node.js</b>, <b>MongoDB</b>, and <b>Passport.js</b>.</p>
             <div className="project-links">
             <a href="https://github.com/domzalex/rate-my-venue-atl" rel="noreferrer" target="_blank">view on GitHub</a>
             </div>
@@ -52,7 +52,7 @@ function Projects() {
           <div className="project">
             <a href="https://github.com/domzalex/viridian-creators-club" rel="noreferrer" target="_blank"><h2 className="project-name">Viridian Creators Club</h2></a>
             <h3>**UNDER CONSTRUCTION**</h3>
-            <p className="project-text">A collaborative creative writing and education community.<br></br><br></br>Front end <i>currently</i> being built with <b>Express.js</b>.<br></br><br></br>Back end being built with <b>Node.js</b>, <b>MongoDB</b>, and <b>Passport.js</b>.<br></br><br></br><b>**Not desktop-friendly**</b></p>
+            <p className="project-text">A collaborative creative writing and education community.<br></br><br></br>Front end <i>currently</i> being built with <b>Express.js</b>.<br></br><br></br>Back end being built with <b>Node.js</b>, <b>MongoDB</b>, and <b>Passport.js</b>.</p>
             <div className="project-links">
             <a href="https://github.com/domzalex/viridian-creators-club" rel="noreferrer" target="_blank">view on GitHub</a>
             </div>
