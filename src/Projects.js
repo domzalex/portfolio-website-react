@@ -15,7 +15,7 @@ function Projects() {
           </div>
           <div className="project">
             <a href="https://www.theculdesac.club" rel="noreferrer" target="_blank"><h2 className="project-name">The Cul-De-Sac</h2></a>
-            <p className="project-text">A public blog with a retro computer style. Features a user login and a realtime chatroom built using <b>Socket.io</b>.<br></br><br></br>Front end built with <b>Express.js</b>.<br></br><br></br>Back end built with <b>Node.js</b>, <b>MongoDB</b>, and <b>Passport.js</b>.</p>
+            <p className="project-text">A public blog with a Visual Studio Code style. Features a user login and a realtime chatroom built using <b>Socket.io</b>.<br></br><br></br>Front end built with <b>Express.js</b>.<br></br><br></br>Back end built with <b>Node.js</b>, <b>MongoDB</b>, and <b>Passport.js</b>.</p>
             <div className="project-links">
             <a href="https://github.com/domzalex/the-cul-de-sac-club" rel="noreferrer" target="_blank">view on GitHub</a>
             </div>

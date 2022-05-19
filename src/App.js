@@ -3,6 +3,7 @@ import './App.css';
 import Nav from './Nav';
 import About from './About';
 import Projects from './Projects';
+import alexImg from './alex.png'
 import {
   BrowserRouter as Router,
   Switch,
@@ -21,7 +22,6 @@ function App() {
           <Route path="/About" component={About} />
           <Route path="/Projects" component={Projects} />
         </Switch>
-        <div className="footer-div"><a className="main-github-link" href="mailto:hello@alexdomzalski.com" target="_blank">say hello!</a></div>
       </div>
     </Router>
     
@@ -32,8 +32,9 @@ const Home = () => {
   return (
     <div>
       <div className="homeContent">
-          <h1>Full-stack Web Developer</h1>
-          <Link className="mainHomeLink" to="/Projects">- Projects -</Link>
+          <img className="homeImg" src={alexImg}></img>
+          <h1>Hey! I'm Alex.<br></br>Web developer.</h1>
+          {/* <Link className="mainHomeLink" to="/Projects">- Projects -</Link> */}
         </div>
     </div>
   );
