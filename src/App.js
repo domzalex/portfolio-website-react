@@ -3,7 +3,6 @@ import './App.css';
 import Nav from './Nav';
 import About from './About';
 import Projects from './Projects';
-import alexImg from './alex.png'
 import {
   BrowserRouter as Router,
   Switch,
@@ -32,7 +31,6 @@ const Home = () => {
   return (
     <div>
       <div className="homeContent">
-          <img className="homeImg" src={alexImg}></img>
           <h1>Hey! I'm Alex.<br></br>Web developer.</h1>
           {/* <Link className="mainHomeLink" to="/Projects">- Projects -</Link> */}
         </div>

@@ -42,11 +42,11 @@ function Projects() {
             </div>
           </div>
           <div className="project">
-            <a href="https://domzalex.github.io/studio-mira/" rel="noreferrer" target="_blank"><h2 className="project-name">Studio Mira - DEMO</h2></a>
+            <a href="https://www.studioazure.io" rel="noreferrer" target="_blank"><h2 className="project-name">Studio Azure</h2></a>
             <h3>**UNDER CONSTRUCTION**</h3>
-            <p className="project-text">A visual design studio creating art pieces in a variety of media.<br></br><br></br>Currently in the design stages; front-end likely to be finalized with <b>React.js</b>.<br></br><br></br><b>**Not mobile-friendly**</b></p>
+            <p className="project-text">A web development studio.<br></br><br></br>Currently in the design stages; front-end likely to be finalized with <b>React.js</b>.</p>
             <div className="project-links">
-            <a href="https://github.com/domzalex/studio-mira" rel="noreferrer" target="_blank">view on GitHub</a>
+            <a href="https://github.com/domzalex/studio-azure-static-test" rel="noreferrer" target="_blank">view on GitHub</a>
             </div>
           </div>
           <div className="project">
