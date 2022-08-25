@@ -38,12 +38,6 @@ function Projects() {
             </div>
           </div>
           <div className="project">
-            <a href="https://legendofdragoon.org" className="project-name" rel="noreferrer" target="_blank"><h2>Legend of Dragoon</h2></a>
-            <p className="project-text">The global fansite for the video game <i>The Legend of Dragoon</i>.<br></br><br></br>Currently acting as a UX and custom CSS/JS consultant for their current WordPress build.<br></br><br></br><b>**Site is currently in the re-work planning phase.**</b></p>
-            <div className="project-links">
-            </div>
-          </div>
-          <div className="project">
             <a href="https://www.theculdesac.club" className="project-name" rel="noreferrer" target="_blank"><h2>The Cul-De-Sac</h2></a>
             <p className="project-text">A simple public blog with playful experimental features coming and going. Features a user login and a realtime chatroom built using <b>Socket.io</b>.<br></br><br></br>Front end built with <b>Express.js</b>.<br></br><br></br>Back end built with <b>Node.js</b>, <b>MongoDB</b>, and <b>Passport.js</b>.</p>
             <div className="project-links">
@@ -51,10 +45,9 @@ function Projects() {
             </div>
           </div>
           <div className="project">
-            <a href="https://domzalex.github.io/wordle-clone/" className="project-name" rel="noreferrer" target="_blank"><h2>Wordle Clone</h2></a>
-            <p className="project-text">A clone of the popular word game <b>Wordle</b> created in an evening as a test of skills.<br></br><br></br>No single-word daily limit; play as many times as you want.<br></br><br></br><b>**Not mobile-friendly**</b></p>
+            <a href="https://legendofdragoon.org" className="project-name" rel="noreferrer" target="_blank"><h2>Legend of Dragoon</h2></a>
+            <p className="project-text">The global fansite for the video game <i>The Legend of Dragoon</i>.<br></br><br></br>Currently acting as a UX and custom CSS/JS consultant for their current WordPress build.<br></br><br></br><b>**Site is currently in the re-work planning phase.**</b></p>
             <div className="project-links">
-            <a href="https://github.com/domzalex/wordle-clone" rel="noreferrer" className="github" target="_blank">view on GitHub</a>
             </div>
           </div>
         </div>

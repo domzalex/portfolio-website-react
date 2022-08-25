@@ -168,23 +168,56 @@ h1 {
   position: absolute;
   left: 50%;
   top: 23%;
-  text-align: center;
+  text-align: left;
   transform: translateX(-50%);
 }
-.aboutContent h1 {
+.aboutContent h2 {
+  position: relative;
   font-size: 2em;
-  color: rgb(58, 58, 58);
+  width: auto;
+  color: rgb(52, 52, 52);
+  border-bottom: solid 1px rgb(52, 52, 52);
 }
 .about-text {
   background-color: #f7f7f3;
-  margin: 35px;
   font-size: 18px;
   font-weight: 400;
   letter-spacing: 1.4px;
   line-height: 2em;
   text-align: left;
-  padding: 0px 20px;
-  border-left: solid 2px rgb(52, 52, 52);
+  padding: 30px;
+  border-left: solid 1px rgb(52, 52, 52);
+}
+.aboutContent h2::before {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  height: 3px;
+  width: 100%;
+  background: linear-gradient( 90deg, #f7f7f300 0%, #f7f7f3 50% );
+}
+.aboutContent .github {
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 600;
+  margin: 0;
+  padding: 2px 5px 1px 5px;
+  color: #f7f7f3;
+  background-color: rgb(52, 52, 52);
+}
+.aboutContent .instagram {
+  margin-left: 25px;
+  position: relative;
+}
+.aboutContent .instagram::after {
+  content: '';
+  position: absolute;
+  bottom: 50%;
+  left: -25px;
+  height: 1px;
+  width: 25px;
+  background-color: rgb(52, 52, 52);
 }
 
 
@@ -203,54 +236,57 @@ h1 {
 .projects-list {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-gap: 1.5rem;
+  grid-gap: 3rem;
   margin: auto;
 }
 .project {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
+  justify-content: space-between;
   position: relative;
   width: auto;
-  height: 350px;
-  border-radius: 5px;
-  border: solid 1px rgb(52, 52, 52);
-  transition: all 0.2s ease;
-}
-.project:hover {
-  transform: scale(1.03);
+  height: 250px;
 }
 .project-name {
+  position: relative;
   font-weight: 800;
-  font-size: 1.5em;
-  
+  font-size: 1em;
+  text-decoration: none;
+  padding: 0px 5px;
+  color: rgb(52, 52, 52);
   border-bottom: solid 1px rgb(52, 52, 52);
+}
+.project-name::before {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  height: 3px;
+  width: 100%;
+  background: linear-gradient( 90deg, #f7f7f300 0%, #f7f7f3 100% );
 }
 .project-text {
   font-size: 16px;
-  padding: 0 10px;
-  margin: 20px 0px;
+  padding: 15px;
   text-align: left;
-}
-.project h3 {
-  color: red;
-  margin-top: 0.3em;
-  font-size: 0.8em;
+  height: 100%;
+  border-left: solid 1px rgb(52, 52, 52);
 }
 .project-links {
-  display: flex;
-  flex-direction: column;
-  position: absolute;
-  bottom: 25px;
-}
-.project a {
-  text-decoration: none;
-  position: relative;
   width: auto;
-  font-size: 12px;
-  font-weight: 800;
-  color: rgb(58, 58, 58);
-  margin-top: 10px;
+  position: relative;
+  bottom: 0;
+  text-align: left;
+  background-color: rgb(52, 52, 52);
+}
+.project-links .github {
+  text-decoration: none;
+  font-size: 0.8em;
+  font-weight: 600;
+  margin: 0;
+  padding: 2px 5px 1px 5px;
+  color: #f7f7f3;
 }
 
 
@@ -323,7 +359,7 @@ body {
   display: flex;
   align-items: center;
   width: 100%;
-  padding: 0 3vw;
+  padding: 0 2.5vw;
   justify-content: space-between;
 }
 
@@ -385,7 +421,7 @@ nav {
   width: 95%;
   position: absolute;
   left: 50%;
-  top: 35%;
+  top: 40%;
   text-align: center;
   transform: translateX(-50%);
 }
@@ -464,37 +500,68 @@ h1 {
 .aboutContent {
   position: absolute;
   top: 40px;
-  left: 0;
+  left: 2.5vw;
   transform: none;
-  width: 100vw;
+  width: 95vw;
   height: 80vh;
   display: flex;
+  flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   text-align: center;
 }
 
-.aboutContent h1 {
-  display: none;
-}
 
 .about-text {
   color: rgb(58, 58, 58);
-  margin: 2.5vw;
-  font-size: 0.9em;
+  margin: 0;
+  font-size: 14px;
   font-weight: 400;
   letter-spacing: normal;
-  line-height: 2em;
+  line-height: 120%;
   text-align: left;
-  padding: 7px 15px;
-  border-radius: 5px;
+  padding: 15px;
   border-left: none;
   background-color: #f7f7f3;
-  border: solid 1px rgb(52, 52, 52);
+  border-left: solid 1px rgb(52, 52, 52);
 }
-.about-text a {
-  color: rgb(18, 142, 209);
+.aboutContent h2 {
+  font-size: 20px;
+  border-bottom: solid 1px rgb(52, 52, 52);
+  width: auto;
+  padding: 0px 5px;
+  position: relative;
+}
+.aboutContent h2::before {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  height: 3px;
+  width: 100%;
+  background: linear-gradient( 90deg, #f7f7f300 0%, #f7f7f3 100% );
+}
+.aboutContent .github {
   text-decoration: none;
+  font-size: 14px;
+  font-weight: 600;
+  margin: 0;
+  padding: 2px 5px 1px 5px;
+  color: #f7f7f3;
+  background-color: rgb(52, 52, 52);
+}
+.aboutContent .instagram {
+  margin-left: 25px;
+  position: absolute;
+}
+.aboutContent .instagram::after {
+  content: '';
+  position: absolute;
+  bottom: 50%;
+  left: -25px;
+  height: 1px;
+  width: 25px;
+  background-color: rgb(52, 52, 52);
 }
 
 
@@ -517,9 +584,11 @@ h1 {
   display: flex;
   flex-direction: column;
   margin: auto;
+  grid-gap: 1.5em;
 }
 .project {
-  padding: 15px;
+  padding: 0px;
+  margin-bottom: 1.5em;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -541,25 +610,30 @@ h1 {
   transform: none;
 }
 .project-name {
-  font-weight: 800;
-  font-size: 1.5em;
+  position: relative;
+  font-weight: auto;
+  font-size: 14px;
   margin: 0;
   padding: 0px 5px;
   color: rgb(52, 52, 52);
   text-align: left;
   border-bottom: solid 1px rgb(52, 52, 52);
-  border-top-left-radius: 5px;
-  border-top-right-radius: 5px;
+}
+.project-name::before {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  height: 3px;
+  width: 100%;
+  background: linear-gradient( 90deg, #f7f7f300 0%, #f7f7f3 100% );
 }
 .project-text {
-  font-size: 0.8em;
-  padding: 0;
+  font-size: 14px;
+  height: auto;
   padding: 15px;
   border-left: solid 1px rgb(52, 52, 52);
   margin: 0em 0em;
-}
-.project h3 {
-  font-size: 0.8em;
 }
 .project-links {
   width: auto;
@@ -568,10 +642,9 @@ h1 {
   text-align: left;
   background-color: rgb(52, 52, 52);
 }
-.project-links a {
+.project-links .github {
   text-decoration: none;
-  font-size: 0.8em;
-  font-weight: 600;
+  font-size: 14px;
   margin: 0;
   padding: 2px 5px 1px 5px;
   color: #f7f7f3;
